@@ -27,9 +27,7 @@ jobs:
       - name: Test app
         run: npm test
 
-      - name: Deploy app to Firebase
-        uses: w9jds/firebase-action@master
-        with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      - name: deploy
+        run: |
+          echo "Hello world"
+
