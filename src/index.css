@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  float: left;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App {
+  margin-left: 10px;
+}
+
+.input {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  text-align: left;
+}
+.button {
+  margin-top: 10px;
 }
