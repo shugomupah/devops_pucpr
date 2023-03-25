@@ -23,11 +23,12 @@ jobs:
 
       - name: Build app
         run: npm run build
+        
+      - name: deploy
+        run: |
+          echo "Hello world"
 
       - name: Test app
         run: npm test
 
-      - name: deploy
-        run: |
-          echo "Hello world"
 
