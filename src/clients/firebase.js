@@ -3,7 +3,7 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAubCn8PV8WfGx80El03g0ycHzkWXOj_UY",
+    apiKey: "AIzaSyAubCn8PV8WfGx80El03g0ycHzkWXOj_UY2",
     authDomain: "pucpr-9735b.firebaseapp.com",
     projectId: "pucpr-9735b",
     storageBucket: "pucpr-9735b.appspot.com",
