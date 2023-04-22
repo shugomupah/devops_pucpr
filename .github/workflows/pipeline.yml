@@ -1,9 +1,8 @@
 name: Build, Test, and Deploy
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build-and-deploy:
@@ -48,8 +47,7 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            Need deploy avaiable at netlify
-            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+            New Pull Request
 
 
 
