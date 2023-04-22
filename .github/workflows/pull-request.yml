@@ -1,0 +1,23 @@
+name: Pull Request
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  send-telegram-message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Send Telegram message
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            Need deploy available at Netlify
+            See changes: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
